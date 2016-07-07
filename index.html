@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <title> Title of the page </title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" media="all" href="styles/reset.css">
+    <link rel="stylesheet" media="all" href="styles/main_global.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header__main-row">
+        <h1 class="logo__wrap">
+          <a href="#" class="logo__text"> Site logo </a>
+        </h1>
+      </div>
+      <div class="menu__trigger-wrap">
+        <div id="menu__trigger" class="menu__trigger">
+          <span class="menu__trigger-decor"></span>
+        </div>
+      </div>
+      <nav class="header__menu-row">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link"> Home </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link"> About us </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link"> News </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link"> Blog </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <div class="base">
+        <div class="elements_list"></div>
+      </div>
+    </div>
+
+    <footer class="footer"></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function($) {
+        getAllClasses('html', '.elements_list'),
+        pageWidget(['index']);
+      });
+    </script>
+  </body>
+</html>
