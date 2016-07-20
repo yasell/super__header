@@ -1,0 +1,54 @@
+/* base */
+html {
+  height: 100%;
+  font: normal 10px/1.33 sans-serif;
+  font-weight: 300;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  font-size: 1.6rem;
+  color: #7e8287;
+  -webkit-text-size-adjust: none;
+  background: white;
+}
+
+.wrapper {
+  position: relative;
+  min-width: 96rem;
+  min-height: 100%;
+  height: auto !important;
+  overflow: hidden;
+}
+
+.base {
+  position: relative;
+  padding: 8rem 3rem 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: olive;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+.elements_list {
+  padding: 3rem;
+}

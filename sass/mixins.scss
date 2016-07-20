@@ -1,0 +1,19 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+@mixin container {
+  width: 280px;
+  margin: 0 auto;
+  @media (min-width: $tablet) {
+    width: 700px;
+  }
+  @media (min-width: $desktop) {
+    width: 1230px;
+  }
+}
